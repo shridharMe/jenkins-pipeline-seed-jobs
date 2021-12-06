@@ -1,5 +1,5 @@
 
-pipelineJob('rails-mysql-app/PR') {
+pipelineJob('pr-rails-mysql-app') {
   definition {
     cpsScmFlowDefinition {
       scm {
