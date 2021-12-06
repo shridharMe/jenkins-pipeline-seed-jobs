@@ -6,7 +6,7 @@ pipelineJob('pr-rails-mysql-app') {
         gitSCM {
           userRemoteConfigs {
             userRemoteConfig {
-              credentialsId('shridharMe')
+              credentialsId('guthub_repo_access')
               name('')
               refspec('+refs/pull/*:refs/remotes/origin/pr/*')
               url('git@github.com:shridharMe/rails-mysql-app.git')
