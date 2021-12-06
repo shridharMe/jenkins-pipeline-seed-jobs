@@ -13,11 +13,6 @@ pipelineJob('pr-jenkins-pipeline-with-library') {
               url('git@github.com:shridharMe/jenkins-pipeline-with-library.git')
             }
           }
-          branches {
-            branchSpec {
-              name('*/master')
-            }
-          }
           browser {
             gitWeb {
               repoUrl('')
