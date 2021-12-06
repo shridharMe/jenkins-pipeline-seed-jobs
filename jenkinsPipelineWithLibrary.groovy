@@ -6,7 +6,7 @@ pipelineJob('build-jenkins-pipeline-with-library') {
         gitSCM {
           userRemoteConfigs {
             userRemoteConfig {
-              credentialsId('shridharMe')
+              credentialsId('guthub_repo_access')
               name('')
               refspec('')
               url('git@github.com:shridharMe/jenkins-pipeline-with-library.git')
