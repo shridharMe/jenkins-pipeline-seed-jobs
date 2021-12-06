@@ -1,4 +1,4 @@
-pipelineJob('rails-mysql-app/build') {
+pipelineJob('build-rails-mysql-app') {
   definition {
     cpsScmFlowDefinition {
       scm {
