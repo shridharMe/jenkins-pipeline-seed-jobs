@@ -1,5 +1,5 @@
 
-pipelineJob('jenkins-pipeline-with-library/build') {
+pipelineJob('build-jenkins-pipeline-with-library') {
   definition {
     cpsScmFlowDefinition {
       scm {
