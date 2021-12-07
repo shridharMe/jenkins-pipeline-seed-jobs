@@ -14,7 +14,7 @@ pipelineJob('pr-jenkins-pipeline-with-library') {
           }
          branches {
             branchSpec {
-              name('*/master')
+              name('${sha1}')
             }
           }
           browser {
