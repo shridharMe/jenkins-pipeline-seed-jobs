@@ -35,6 +35,7 @@ pipelineJob('pr-jenkins-pipeline-with-library') {
       triggers {
         ghprbTrigger {
             adminlist("shridharMe")
+            whitelist ("shridharMe")
             orgslist("")
             cron("H/5 * * * *")
             onlyTriggerPhrase(true)
