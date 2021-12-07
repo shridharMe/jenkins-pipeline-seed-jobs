@@ -34,11 +34,29 @@ pipelineJob('pr-jenkins-pipeline-with-library') {
     pipelineTriggers {
       triggers {
         ghprbTrigger {
+            adminlist()
+            orgslist()
+            cron()
+            onlyTriggerPhrase(true)
+            useGitHubHooks(true)
+            permitAll(false)
+            autoCloseFailedPullRequests(false)
+            allowMembersOfWhitelistedOrgsAsAdmin(true)
+            msgSuccess("build passed")
+            msgFailure("build failed")
+            commitStatusContext("jenkins")
+            gitHubAuthId("github_token")
+            buildDescTemplate("Jenkins job")
+            blackListLabels("")
+            whiteListLabels("")
+            includedRegions("")
+            excludedRegions("")
             triggerPhrase('restest this please')
+            
+
             extensions {
                ghprbCancelBuildsOnUpdate {
                 overrideGlobal(true)
-
                 }
             }
         }
