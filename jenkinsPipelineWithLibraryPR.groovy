@@ -51,7 +51,7 @@ pipelineJob('pr-jenkins-pipeline-with-library') {
             msgFailure("build failed")
             commitStatusContext("jenkins")
             gitHubAuthId("github_token")
-            buildDescTemplate("Jenkins job")
+            buildDescTemplate("")
             blackListLabels("")
             whiteListLabels("")
             includedRegions("")
