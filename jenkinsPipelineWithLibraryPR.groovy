@@ -34,9 +34,9 @@ pipelineJob('pr-jenkins-pipeline-with-library') {
     pipelineTriggers {
       triggers {
         ghprbTrigger {
-            adminlist()
-            orgslist()
-            cron()
+            adminlist("shridharMe")
+            orgslist("")
+            cron("H/5 * * * *")
             onlyTriggerPhrase(true)
             useGitHubHooks(true)
             permitAll(false)
