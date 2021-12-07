@@ -1,5 +1,4 @@
 
-
 pipelineJob('pr-jenkins-pipeline-with-library') {
   definition {
     cpsScmFlowDefinition {
@@ -29,6 +28,21 @@ pipelineJob('pr-jenkins-pipeline-with-library') {
       }
       scriptPath('Jenkinsfile')
       lightweight(true)
+    }
+  }
+  properties {
+    pipelineTriggers {
+      triggers {
+        ghprbTrigger {
+            triggerPhrase('restest this please')
+            extensions {
+               ghprbCancelBuildsOnUpdate {
+                overrideGlobal(true)
+
+                }
+            }
+        }
+      }
     }
   }
 }
