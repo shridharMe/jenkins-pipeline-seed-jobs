@@ -31,6 +31,7 @@ pipelineJob('pr-jenkins-pipeline-with-library') {
     }
   }
   properties {
+    githubProjectUrl("https://github.com/shridharMe/jenkins-pipeline-with-library/")
     pipelineTriggers {
       triggers {
         ghprbTrigger {
