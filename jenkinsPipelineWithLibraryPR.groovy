@@ -7,7 +7,7 @@ pipelineJob('pr-jenkins-pipeline-with-library') {
           userRemoteConfigs {
             userRemoteConfig {
               credentialsId('guthub_repo_access')
-              name('')
+              name('jenkins')
               refspec('+refs/pull/*:refs/remotes/origin/pr/*')
               url('git@github.com:shridharMe/jenkins-pipeline-with-library.git')
             }
@@ -19,7 +19,7 @@ pipelineJob('pr-jenkins-pipeline-with-library') {
           }
           browser {
             gitWeb {
-              repoUrl('')
+              repoUrl('https://github.com/shridharMe/jenkins-pipeline-with-library')
             }
           }
           gitTool('')
