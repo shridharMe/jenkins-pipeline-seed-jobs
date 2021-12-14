@@ -57,7 +57,7 @@ pipelineJob('pr-jenkins-pipeline-with-library') {
             whiteListLabels("")
             includedRegions("")
             excludedRegions("")
-            triggerPhrase('restest this please')
+            triggerPhrase('retest this please')
             
 
             extensions {
