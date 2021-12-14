@@ -57,7 +57,7 @@ pipelineJob('pr-terraform-complaince-testing') {
             whiteListLabels("")
             includedRegions("")
             excludedRegions("")
-            triggerPhrase('restest this please')
+            triggerPhrase('retest this please')
             
 
             extensions {
