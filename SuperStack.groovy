@@ -1,4 +1,4 @@
-pipelineJob('build-super-stack') {
+pipelineJob('vpc-rds-stack') {
   definition {
     cpsScmFlowDefinition {
       scm {
@@ -8,7 +8,7 @@ pipelineJob('build-super-stack') {
               credentialsId('github_repo_access')
               name('')
               refspec('')
-              url('git@github.com:shridharMe/super-stack.git')
+              url('git@github.com:shridharMe/vpc-rds-stack.git')
             }
           }
           branches {
